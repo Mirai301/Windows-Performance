@@ -70,5 +70,3 @@ If ($anser.Contains("y")) {
     Write-Host "再起動せず処理を終了します"
     exit(0)
 }
-
-
