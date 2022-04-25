@@ -53,7 +53,7 @@ powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 # 電源オプションの取得
 powercfg.exe /GETACTIVESCHEME
 
-Write-Output "[*]HDDのデフラグを開始します｡`n"
+Write-Output "`n[*]HDDのデフラグを開始します｡`n"
 # HDDのデフラグ
 defrag /A /C /U /V
 
