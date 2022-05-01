@@ -57,14 +57,16 @@ Write-Output "`n[*]HDDのデフラグを開始します｡`n"
 # HDDのデフラグ
 defrag /A /C /U /V
 
+# explorer.exeの再起動
+taskkill /f /im explorer.exe
+start explorer.exe
+
 # 再起動の確認
 [string]$anser = Read-Host "再起動しますか？(yes/no)：" 
 
 If ($anser.Contains("y")) {
     Write-Host "再起動します"
     # 再起動
-    taskkill /f /im explorer.exe
-    start explorer.exe
     shutdown /r /t 0
 }Else{
     Write-Host "再起動せず処理を終了します"
