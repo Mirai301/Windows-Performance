@@ -62,7 +62,7 @@ taskkill /f /im explorer.exe
 start explorer.exe
 
 # 再起動の確認
-[string]$anser = Read-Host "再起動しますか？(yes/no)：" 
+[string]$anser = Read-Host "再起動しますか？(yes/no)" 
 
 If ($anser.Contains("y")) {
     Write-Host "再起動します"
